@@ -1,0 +1,6 @@
+<div class="ui one column grid">
+    <p>Các Item</p>
+    <div *ngFor="let product of products" class="column" [class.selected]="isSelected(product)">
+        <product-list [product]="product" (selectedProduct)="selectProduct($event)"></product-list>
+    </div>
+</div>
